@@ -1,0 +1,11 @@
+exposure_rank,employment_type,city_tier,open_loans,outstanding,pct_of_portfolio,par30_pct
+1,Salaried,Tier 1,2131,193599626.03,19.01,20.73
+2,Salaried,Tier 2,1810,165980195.26,16.30,22.43
+3,Salaried,Tier 3,1397,127211714.57,12.49,24.34
+4,Self-Employed,Tier 1,951,80184787.81,7.87,31.30
+5,Self-Employed,Tier 2,826,67794825.27,6.66,29.34
+6,Business Owner,Tier 1,466,58670535.02,5.76,20.33
+7,Self-Employed,Tier 3,592,51978994.51,5.10,35.97
+8,Business Owner,Tier 2,397,51075472.14,5.01,23.96
+9,Business Owner,Tier 3,289,40704306.71,4.00,29.98
+10,Gig Worker,Tier 1,639,36552794.85,3.59,39.63

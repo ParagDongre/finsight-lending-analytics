@@ -1,0 +1,26 @@
+# Secrets - never commit credentials
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated data (reproducible from the seed; regenerate with the commands in README)
+data/raw/*.csv
+data/raw/*.json
+data/processed/*.csv
+data/rejected/*.csv
+!data/**/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+data/processed/_ground_truth/
+.streamlit/secrets.toml
+powerbi/data/

@@ -1,0 +1,13 @@
+acquisition_channel,city_tier,mature_loans,default_rate_pct,risk_rank_in_channel
+Customer Referral,Tier 3,418,10.29,1
+Customer Referral,Tier 2,527,7.21,2
+Customer Referral,Tier 1,736,6.25,3
+Organic,Tier 3,915,9.73,1
+Organic,Tier 2,1377,6.97,2
+Organic,Tier 1,1606,6.23,3
+Paid Digital,Tier 3,681,10.87,1
+Paid Digital,Tier 2,962,9.98,2
+Paid Digital,Tier 1,1089,9.46,3
+Partner Referral,Tier 2,725,10.76,1
+Partner Referral,Tier 3,516,10.08,2
+Partner Referral,Tier 1,812,9.36,3

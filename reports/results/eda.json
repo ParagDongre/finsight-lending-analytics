@@ -1,0 +1,428 @@
+{
+  "missing": {
+    "table": {
+      "missing_n": {
+        "age": 270.0,
+        "monthly_income": 243.0,
+        "credit_score": 243.0,
+        "credit_utilization_pct": 0.0,
+        "employment_type": 0.0,
+        "employment_type (== 'Unknown')": 297.0
+      },
+      "missing_pct": {
+        "age": 1.34,
+        "monthly_income": 1.21,
+        "credit_score": 1.21,
+        "credit_utilization_pct": 0.0,
+        "employment_type": 0.0,
+        "employment_type (== 'Unknown')": 1.48
+      }
+    },
+    "default_rate_by_missingness": {
+      "monthly_income": {
+        "default_rate_missing_pct": 9.3,
+        "default_rate_present_pct": 8.59,
+        "n_missing": 129
+      },
+      "credit_score": {
+        "default_rate_missing_pct": 7.03,
+        "default_rate_present_pct": 8.62,
+        "n_missing": 128
+      },
+      "age": {
+        "default_rate_missing_pct": 8.44,
+        "default_rate_present_pct": 8.6,
+        "n_missing": 154
+      }
+    }
+  },
+  "distribution_summary": {
+    "count": {
+      "loan_amount": 20131.0,
+      "monthly_income": 19888.0,
+      "interest_rate": 20131.0,
+      "credit_score": 19888.0
+    },
+    "mean": {
+      "loan_amount": 149669.962,
+      "monthly_income": 44206.552,
+      "interest_rate": 16.894,
+      "credit_score": 718.037
+    },
+    "std": {
+      "loan_amount": 117514.942,
+      "monthly_income": 24101.907,
+      "interest_rate": 3.752,
+      "credit_score": 59.767
+    },
+    "min": {
+      "loan_amount": 10000.0,
+      "monthly_income": 12000.0,
+      "interest_rate": 10.0,
+      "credit_score": 505.0
+    },
+    "5%": {
+      "loan_amount": 36000.0,
+      "monthly_income": 16600.0,
+      "interest_rate": 10.455,
+      "credit_score": 619.0
+    },
+    "25%": {
+      "loan_amount": 71000.0,
+      "monthly_income": 27500.0,
+      "interest_rate": 14.23,
+      "credit_score": 678.0
+    },
+    "50%": {
+      "loan_amount": 117000.0,
+      "monthly_income": 38900.0,
+      "interest_rate": 16.81,
+      "credit_score": 718.0
+    },
+    "75%": {
+      "loan_amount": 189000.0,
+      "monthly_income": 54700.0,
+      "interest_rate": 19.43,
+      "credit_score": 758.0
+    },
+    "95%": {
+      "loan_amount": 376000.0,
+      "monthly_income": 90365.0,
+      "interest_rate": 23.3,
+      "credit_score": 817.0
+    },
+    "max": {
+      "loan_amount": 1000000.0,
+      "monthly_income": 366700.0,
+      "interest_rate": 31.5,
+      "credit_score": 900.0
+    },
+    "skew": {
+      "loan_amount": 2.273,
+      "monthly_income": 1.85,
+      "interest_rate": 0.206,
+      "credit_score": -0.02
+    }
+  },
+  "outliers": {
+    "loan_amount": {
+      "iqr_outliers": 1093,
+      "pct": 5.43,
+      "default_rate_outliers_pct": 19.42,
+      "default_rate_non_outliers_pct": 7.99
+    },
+    "monthly_income": {
+      "iqr_outliers": 795,
+      "pct": 4.0,
+      "default_rate_outliers_pct": 5.41,
+      "default_rate_non_outliers_pct": 8.72
+    },
+    "loan_to_income": {
+      "iqr_outliers": 723,
+      "pct": 3.64,
+      "default_rate_outliers_pct": 40.92,
+      "default_rate_non_outliers_pct": 7.3
+    },
+    "foir": {
+      "iqr_outliers": 546,
+      "pct": 2.75,
+      "default_rate_outliers_pct": 46.13,
+      "default_rate_non_outliers_pct": 7.52
+    }
+  },
+  "segments_by_employment": {
+    "loans": {
+      "Gig Worker": 1381,
+      "Contract Worker": 770,
+      "Self-Employed": 2084,
+      "Unknown": 140,
+      "Business Owner": 1003,
+      "Salaried": 4986
+    },
+    "default_rate": {
+      "Gig Worker": 15.06,
+      "Contract Worker": 11.82,
+      "Self-Employed": 9.93,
+      "Unknown": 9.29,
+      "Business Owner": 7.58,
+      "Salaried": 5.94
+    },
+    "avg_loan": {
+      "Gig Worker": 92105.0,
+      "Contract Worker": 114984.42,
+      "Self-Employed": 138471.21,
+      "Unknown": 168071.43,
+      "Business Owner": 224512.46,
+      "Salaried": 158956.08
+    },
+    "avg_income": {
+      "Gig Worker": 23800.0,
+      "Contract Worker": 30300.0,
+      "Self-Employed": 37900.0,
+      "Unknown": 39400.0,
+      "Business Owner": 58700.0,
+      "Salaried": 41900.0
+    },
+    "avg_credit": {
+      "Gig Worker": 673.6,
+      "Contract Worker": 691.89,
+      "Self-Employed": 709.79,
+      "Unknown": 719.25,
+      "Business Owner": 718.17,
+      "Salaried": 736.26
+    }
+  },
+  "default_by_decile": {
+    "credit_score": [
+      22.44,
+      13.15,
+      10.68,
+      8.81,
+      7.57,
+      7.08,
+      5.51,
+      4.98,
+      3.53,
+      2.08
+    ],
+    "foir": [
+      3.21,
+      3.33,
+      4.39,
+      5.58,
+      5.46,
+      5.86,
+      8.81,
+      9.38,
+      11.44,
+      28.42
+    ],
+    "loan_to_income": [
+      3.42,
+      3.91,
+      4.59,
+      4.2,
+      4.59,
+      6.26,
+      7.72,
+      9.57,
+      13.1,
+      28.52
+    ]
+  },
+  "repayment_trend_last6": [
+    {
+      "due_month": "2026-01-01",
+      "installments": 11278,
+      "late_pct": 24.71,
+      "unpaid_pct": 7.17
+    },
+    {
+      "due_month": "2026-02-01",
+      "installments": 11576,
+      "late_pct": 24.78,
+      "unpaid_pct": 7.21
+    },
+    {
+      "due_month": "2026-03-01",
+      "installments": 11968,
+      "late_pct": 25.51,
+      "unpaid_pct": 7.38
+    },
+    {
+      "due_month": "2026-04-01",
+      "installments": 12315,
+      "late_pct": 25.33,
+      "unpaid_pct": 7.58
+    },
+    {
+      "due_month": "2026-05-01",
+      "installments": 11742,
+      "late_pct": 26.04,
+      "unpaid_pct": 8.44
+    },
+    {
+      "due_month": "2026-06-01",
+      "installments": 10642,
+      "late_pct": 26.47,
+      "unpaid_pct": 12.44
+    }
+  ],
+  "cohort_30dpd_first6": [
+    {
+      "disbursement_month": "2023-07-01",
+      "loans": 308,
+      "pct_30dpd_first6": 9.74
+    },
+    {
+      "disbursement_month": "2023-08-01",
+      "loans": 329,
+      "pct_30dpd_first6": 9.12
+    },
+    {
+      "disbursement_month": "2023-09-01",
+      "loans": 319,
+      "pct_30dpd_first6": 12.54
+    },
+    {
+      "disbursement_month": "2023-10-01",
+      "loans": 409,
+      "pct_30dpd_first6": 10.27
+    },
+    {
+      "disbursement_month": "2023-11-01",
+      "loans": 406,
+      "pct_30dpd_first6": 7.88
+    },
+    {
+      "disbursement_month": "2023-12-01",
+      "loans": 413,
+      "pct_30dpd_first6": 11.14
+    },
+    {
+      "disbursement_month": "2024-01-01",
+      "loans": 413,
+      "pct_30dpd_first6": 13.08
+    },
+    {
+      "disbursement_month": "2024-02-01",
+      "loans": 421,
+      "pct_30dpd_first6": 10.21
+    },
+    {
+      "disbursement_month": "2024-03-01",
+      "loans": 472,
+      "pct_30dpd_first6": 11.86
+    },
+    {
+      "disbursement_month": "2024-04-01",
+      "loans": 452,
+      "pct_30dpd_first6": 10.4
+    },
+    {
+      "disbursement_month": "2024-05-01",
+      "loans": 469,
+      "pct_30dpd_first6": 9.38
+    },
+    {
+      "disbursement_month": "2024-06-01",
+      "loans": 534,
+      "pct_30dpd_first6": 11.8
+    },
+    {
+      "disbursement_month": "2024-07-01",
+      "loans": 494,
+      "pct_30dpd_first6": 9.92
+    },
+    {
+      "disbursement_month": "2024-08-01",
+      "loans": 515,
+      "pct_30dpd_first6": 10.87
+    },
+    {
+      "disbursement_month": "2024-09-01",
+      "loans": 554,
+      "pct_30dpd_first6": 12.09
+    },
+    {
+      "disbursement_month": "2024-10-01",
+      "loans": 617,
+      "pct_30dpd_first6": 12.64
+    },
+    {
+      "disbursement_month": "2024-11-01",
+      "loans": 650,
+      "pct_30dpd_first6": 13.69
+    },
+    {
+      "disbursement_month": "2024-12-01",
+      "loans": 646,
+      "pct_30dpd_first6": 10.68
+    },
+    {
+      "disbursement_month": "2025-01-01",
+      "loans": 671,
+      "pct_30dpd_first6": 12.82
+    },
+    {
+      "disbursement_month": "2025-02-01",
+      "loans": 656,
+      "pct_30dpd_first6": 11.59
+    },
+    {
+      "disbursement_month": "2025-03-01",
+      "loans": 633,
+      "pct_30dpd_first6": 10.58
+    },
+    {
+      "disbursement_month": "2025-04-01",
+      "loans": 702,
+      "pct_30dpd_first6": 12.68
+    },
+    {
+      "disbursement_month": "2025-05-01",
+      "loans": 710,
+      "pct_30dpd_first6": 13.66
+    },
+    {
+      "disbursement_month": "2025-06-01",
+      "loans": 697,
+      "pct_30dpd_first6": 11.33
+    },
+    {
+      "disbursement_month": "2025-07-01",
+      "loans": 781,
+      "pct_30dpd_first6": 14.08
+    },
+    {
+      "disbursement_month": "2025-08-01",
+      "loans": 776,
+      "pct_30dpd_first6": 15.21
+    },
+    {
+      "disbursement_month": "2025-09-01",
+      "loans": 829,
+      "pct_30dpd_first6": 13.03
+    },
+    {
+      "disbursement_month": "2025-10-01",
+      "loans": 938,
+      "pct_30dpd_first6": 13.65
+    },
+    {
+      "disbursement_month": "2025-11-01",
+      "loans": 933,
+      "pct_30dpd_first6": 15.22
+    }
+  ],
+  "collections_recovery_by_dpd_bucket": [
+    {
+      "bucket": "1-29",
+      "cases": 33932,
+      "due": 444600198.8,
+      "rec": 425401084.84,
+      "recovery_rate_pct": 95.68
+    },
+    {
+      "bucket": "30-59",
+      "cases": 1951,
+      "due": 25990542.68,
+      "rec": 12756037.51,
+      "recovery_rate_pct": 49.08
+    },
+    {
+      "bucket": "60-89",
+      "cases": 1348,
+      "due": 17806849.4,
+      "rec": 5048459.61,
+      "recovery_rate_pct": 28.35
+    },
+    {
+      "bucket": "90+",
+      "cases": 12520,
+      "due": 192607994.49,
+      "rec": 5491522.08,
+      "recovery_rate_pct": 2.85
+    }
+  ]
+}

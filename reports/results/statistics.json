@@ -1,0 +1,431 @@
+{
+  "descriptive": {
+    "loan_amount": {
+      "mean": 149669.9618,
+      "median": 117000.0,
+      "sd": 117514.9417,
+      "variance": 13809761511.469,
+      "cv": 0.7852,
+      "skew": 2.2729
+    },
+    "monthly_income": {
+      "mean": 44206.5517,
+      "median": 38900.0,
+      "sd": 24101.9072,
+      "variance": 580901929.7187,
+      "cv": 0.5452,
+      "skew": 1.8503
+    },
+    "interest_rate": {
+      "mean": 16.8937,
+      "median": 16.81,
+      "sd": 3.752,
+      "variance": 14.0775,
+      "cv": 0.2221,
+      "skew": 0.2059
+    },
+    "credit_score": {
+      "mean": 718.0368,
+      "median": 718.0,
+      "sd": 59.7666,
+      "variance": 3572.0517,
+      "cv": 0.0832,
+      "skew": -0.0201
+    },
+    "foir": {
+      "mean": 0.4507,
+      "median": 0.4098,
+      "sd": 0.2578,
+      "variance": 0.0664,
+      "cv": 0.5719,
+      "skew": 1.202
+    }
+  },
+  "tenure_mode": 12,
+  "clt": {
+    "5": {
+      "sd_of_sample_means": 51841.43533505606,
+      "theoretical_se": 52554.2795811511,
+      "skew_of_means": 0.8108484339684934
+    },
+    "30": {
+      "sd_of_sample_means": 21321.346500852516,
+      "theoretical_se": 21455.19479556484,
+      "skew_of_means": 0.4233664585728157
+    },
+    "200": {
+      "sd_of_sample_means": 8378.732471496776,
+      "theoretical_se": 8309.561213285868,
+      "skew_of_means": 0.2661858342314944
+    },
+    "1000": {
+      "sd_of_sample_means": 3762.373358683195,
+      "theoretical_se": 3716.148747220566,
+      "skew_of_means": -0.002902032285135797
+    }
+  },
+  "distribution_checks": {
+    "credit_score": {
+      "shapiro_p_raw": 0.09203292117641848,
+      "shapiro_p_log": 3.1534747377591684e-11,
+      "skew_raw": -0.04140655052781783,
+      "skew_log": -0.3009880510038254
+    },
+    "monthly_income": {
+      "shapiro_p_raw": 4.267071977729675e-48,
+      "shapiro_p_log": 3.905511929320911e-05,
+      "skew_raw": 1.6808731115506024,
+      "skew_log": 0.0652788005844432
+    },
+    "loan_amount": {
+      "shapiro_p_raw": 6.666818050546323e-56,
+      "shapiro_p_log": 0.15573007628613234,
+      "skew_raw": 2.12530118733842,
+      "skew_log": -0.012548347638968768
+    }
+  },
+  "binomial_example": {
+    "n": 500,
+    "p": 0.08597066769587032,
+    "mean": 42.98533384793516,
+    "central95": [
+      31,
+      56
+    ]
+  },
+  "ci": {
+    "overall_default": {
+      "k": 891,
+      "n": 10364,
+      "rate": 0.08597066769587032,
+      "wilson": [
+        0.08072605139696698,
+        0.09152209359191554
+      ]
+    },
+    "mean_loan": {
+      "mean": 149669.961750534,
+      "t_ci": [
+        148046.52781642255,
+        151293.39568464548
+      ],
+      "boot_ci": [
+        148085.2801649198,
+        151342.99836073717
+      ]
+    },
+    "by_employment": {
+      "Gig Worker": {
+        "n": 1381.0,
+        "rate": 0.15061549601737872,
+        "ci_low": 0.13272173985480898,
+        "ci_high": 0.17044759129608214
+      },
+      "Contract Worker": {
+        "n": 770.0,
+        "rate": 0.11818181818181818,
+        "ci_low": 0.0972533273997749,
+        "ci_high": 0.14290110824381244
+      },
+      "Self-Employed": {
+        "n": 2084.0,
+        "rate": 0.09932821497120921,
+        "ci_low": 0.08721448433532593,
+        "ci_high": 0.11291635273345683
+      },
+      "Unknown": {
+        "n": 140.0,
+        "rate": 0.09285714285714286,
+        "ci_low": 0.055070172649584116,
+        "ci_high": 0.15239059050836648
+      },
+      "Business Owner": {
+        "n": 1003.0,
+        "rate": 0.07577268195413758,
+        "ci_low": 0.06096525335211829,
+        "ci_high": 0.09381726722786464
+      },
+      "Salaried": {
+        "n": 4986.0,
+        "rate": 0.059366225431207384,
+        "ci_low": 0.05313998949766047,
+        "ci_high": 0.06627091037520165
+      }
+    }
+  },
+  "correlation_with_default": {
+    "loan_to_income": {
+      "pearson_r": 0.26892,
+      "spearman_rho": 0.208,
+      "spearman_p": 0.0
+    },
+    "foir": {
+      "pearson_r": 0.26948,
+      "spearman_rho": 0.2025,
+      "spearman_p": 0.0
+    },
+    "credit_score": {
+      "pearson_r": -0.18778,
+      "spearman_rho": -0.18072,
+      "spearman_p": 0.0
+    },
+    "interest_rate": {
+      "pearson_r": 0.17723,
+      "spearman_rho": 0.16829,
+      "spearman_p": 0.0
+    },
+    "loan_amount": {
+      "pearson_r": 0.13556,
+      "spearman_rho": 0.12091,
+      "spearman_p": 0.0
+    },
+    "credit_utilization_pct": {
+      "pearson_r": 0.06188,
+      "spearman_rho": 0.05978,
+      "spearman_p": 0.0
+    },
+    "tenure_months": {
+      "pearson_r": -0.04358,
+      "spearman_rho": -0.05212,
+      "spearman_p": 0.0
+    },
+    "monthly_income": {
+      "pearson_r": -0.04658,
+      "spearman_rho": -0.04877,
+      "spearman_p": 0.0
+    },
+    "age": {
+      "pearson_r": -0.03667,
+      "spearman_rho": -0.03679,
+      "spearman_p": 0.0002
+    }
+  },
+  "logit_adjusted_odds_ratios": {
+    "Intercept": {
+      "odds_ratio": 0.0022,
+      "ci_low": 0.0014,
+      "ci_high": 0.0033,
+      "p": 0.0
+    },
+    "emp[T.Business Owner]": {
+      "odds_ratio": 1.0717,
+      "ci_low": 0.8045,
+      "ci_high": 1.4275,
+      "p": 0.6361
+    },
+    "emp[T.Contract Worker]": {
+      "odds_ratio": 1.2399,
+      "ci_low": 0.9333,
+      "ci_high": 1.6471,
+      "p": 0.1379
+    },
+    "emp[T.Gig Worker]": {
+      "odds_ratio": 1.5588,
+      "ci_low": 1.2473,
+      "ci_high": 1.948,
+      "p": 0.0001
+    },
+    "emp[T.Self-Employed]": {
+      "odds_ratio": 1.3678,
+      "ci_low": 1.1134,
+      "ci_high": 1.6802,
+      "p": 0.0028
+    },
+    "emp[T.Unknown]": {
+      "odds_ratio": 1.189,
+      "ci_low": 0.611,
+      "ci_high": 2.3136,
+      "p": 0.6103
+    },
+    "C(city_tier)[T.Tier 2]": {
+      "odds_ratio": 1.0789,
+      "ci_low": 0.9015,
+      "ci_high": 1.2912,
+      "p": 0.4072
+    },
+    "C(city_tier)[T.Tier 3]": {
+      "odds_ratio": 1.3781,
+      "ci_low": 1.1399,
+      "ci_high": 1.6661,
+      "p": 0.0009
+    },
+    "chan[T.Customer Referral]": {
+      "odds_ratio": 1.0644,
+      "ci_low": 0.8389,
+      "ci_high": 1.3505,
+      "p": 0.6074
+    },
+    "chan[T.Paid Digital]": {
+      "odds_ratio": 1.4562,
+      "ci_low": 1.2008,
+      "ci_high": 1.7659,
+      "p": 0.0001
+    },
+    "chan[T.Partner Referral]": {
+      "odds_ratio": 1.5091,
+      "ci_low": 1.226,
+      "ci_high": 1.8575,
+      "p": 0.0001
+    },
+    "C(gender)[T.Male]": {
+      "odds_ratio": 1.0143,
+      "ci_low": 0.8644,
+      "ci_high": 1.1902,
+      "p": 0.8618
+    },
+    "C(gender)[T.Other]": {
+      "odds_ratio": 0.8401,
+      "ci_low": 0.3992,
+      "ci_high": 1.7677,
+      "p": 0.6462
+    },
+    "credit_score_100": {
+      "odds_ratio": 0.3183,
+      "ci_low": 0.2756,
+      "ci_high": 0.3676,
+      "p": 0.0
+    },
+    "foir_10pp": {
+      "odds_ratio": 1.4586,
+      "ci_low": 1.4151,
+      "ci_high": 1.5035,
+      "p": 0.0
+    },
+    "util_10pp": {
+      "odds_ratio": 1.1231,
+      "ci_low": 1.082,
+      "ci_high": 1.1658,
+      "p": 0.0
+    },
+    "previous_loans_count": {
+      "odds_ratio": 0.7353,
+      "ci_low": 0.5692,
+      "ci_high": 0.95,
+      "p": 0.0187
+    },
+    "tenure_months": {
+      "odds_ratio": 1.0417,
+      "ci_low": 1.032,
+      "ci_high": 1.0515,
+      "p": 0.0
+    },
+    "cohort_year_after_2024h2": {
+      "odds_ratio": 1.1824,
+      "ci_low": 1.0117,
+      "ci_high": 1.382,
+      "p": 0.0352
+    }
+  },
+  "logit_n": 10107,
+  "hypotheses": {
+    "H1": {
+      "group_a": "Gig Worker",
+      "group_b": "Salaried",
+      "n_a": 1381,
+      "n_b": 4986,
+      "rate_a": 0.15061549601737872,
+      "rate_b": 0.059366225431207384,
+      "diff": 0.09124927058617134,
+      "diff_ci": [
+        0.07127726211339794,
+        0.11122127905894474
+      ],
+      "risk_ratio": 2.537056970076521,
+      "rr_ci": [
+        2.1468156194229246,
+        2.9982351587063936
+      ],
+      "z": 11.114619192099212,
+      "p_value": 1.0650404861775575e-28,
+      "min_expected_count": 109.31741793623371
+    },
+    "H2": {
+      "group_a": "Female",
+      "group_b": "Male",
+      "n_a": 3733,
+      "n_b": 6515,
+      "rate_a": 0.08223948566836324,
+      "rate_b": 0.08825786646201074,
+      "diff": -0.006018380793647499,
+      "diff_ci": [
+        -0.017203901465330875,
+        0.005167139878035878
+      ],
+      "risk_ratio": 0.9318091289206722,
+      "rr_ci": [
+        0.8161146124509279,
+        1.0639047990236912
+      ],
+      "z": -1.0453796868811827,
+      "p_value": 0.29584752117938634,
+      "min_expected_count": 321.2827868852459,
+      "chi2": 1.0928186897437968,
+      "dof": 1,
+      "other_group": {
+        "n": 116,
+        "defaults": 9
+      }
+    },
+    "H3": {
+      "group_a": "New cohorts (Jul24-Sep25)",
+      "group_b": "Old cohorts (Jul23-Jun24)",
+      "n_a": 9931,
+      "n_b": 4945,
+      "rate_a": 0.12466015506998288,
+      "rate_b": 0.10657229524772498,
+      "diff": 0.0180878598222579,
+      "diff_ci": [
+        0.007309386083727219,
+        0.028866333560788576
+      ],
+      "risk_ratio": 1.1697238459602757,
+      "rr_ci": [
+        1.0625804408969044,
+        1.2876708653259052
+      ],
+      "z": 3.21380590100035,
+      "p_value": 0.001309881873299787,
+      "min_expected_count": 586.7118176929282
+    },
+    "H4": {
+      "n_default": 882,
+      "n_nondefault": 9354,
+      "mean_default": 680.6439909297052,
+      "mean_nondefault": 720.8198631601454,
+      "median_default": 681.0,
+      "median_nondefault": 721.0,
+      "mannwhitney_U": 2591288.0,
+      "p_value": 5.626859346238473e-75,
+      "welch_t": -19.708755903636703,
+      "welch_p": 3.052272480710568e-74,
+      "cohens_d": -0.6812558233415626,
+      "prob_superiority_auc": 0.6859131650664685
+    }
+  },
+  "holm_summary": [
+    {
+      "test": "H1 gig vs salaried default rate",
+      "p_raw": 1.0650404861775575e-28,
+      "p_holm": 3.1951214585326726e-28,
+      "reject_H0_at_5pct": true
+    },
+    {
+      "test": "H2 gender (female vs male) default rate",
+      "p_raw": 0.29584752117938634,
+      "p_holm": 0.29584752117938634,
+      "reject_H0_at_5pct": false
+    },
+    {
+      "test": "H3 newer vs older cohorts 30+DPD in first 6",
+      "p_raw": 0.001309881873299787,
+      "p_holm": 0.002619763746599574,
+      "reject_H0_at_5pct": true
+    },
+    {
+      "test": "H4 credit score lower in defaulters",
+      "p_raw": 5.626859346238473e-75,
+      "p_holm": 2.2507437384953892e-74,
+      "reject_H0_at_5pct": true
+    }
+  ]
+}

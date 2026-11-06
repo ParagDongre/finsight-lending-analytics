@@ -1,0 +1,65 @@
+{
+  "train_n": 8773,
+  "test_n": 5572,
+  "target_mean": 0.9521754439350257,
+  "share_full": 0.9264552108748693,
+  "metrics": {
+    "Baseline (train mean)": {
+      "MAE": 0.08995,
+      "RMSE": 0.19428,
+      "R2": -0.00152,
+      "R2_train_cv": -0.00115,
+      "MAE_on_atrisk_tail": 0.6609
+    },
+    "Ridge regression": {
+      "MAE": 0.08289,
+      "RMSE": 0.18538,
+      "R2": 0.08819,
+      "R2_train_cv": 0.0787,
+      "MAE_on_atrisk_tail": 0.60325
+    },
+    "Random forest": {
+      "MAE": 0.07874,
+      "RMSE": 0.18604,
+      "R2": 0.08169,
+      "R2_train_cv": 0.08985,
+      "MAE_on_atrisk_tail": 0.59943
+    },
+    "Gradient boosting": {
+      "MAE": 0.07787,
+      "RMSE": 0.18616,
+      "R2": 0.08045,
+      "R2_train_cv": 0.0783,
+      "MAE_on_atrisk_tail": 0.59865
+    }
+  },
+  "atrisk_share_test": 0.07232591529073941,
+  "best_model": "Ridge regression",
+  "quintile_calibration": [
+    {
+      "q": 0,
+      "pred": 0.8752,
+      "actual": 0.8515
+    },
+    {
+      "q": 1,
+      "pred": 0.9369,
+      "actual": 0.9428
+    },
+    {
+      "q": 2,
+      "pred": 0.9642,
+      "actual": 0.971
+    },
+    {
+      "q": 3,
+      "pred": 0.988,
+      "actual": 0.9795
+    },
+    {
+      "q": 4,
+      "pred": 1.0,
+      "actual": 0.993
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "train": {
+    "n": 6508,
+    "default_rate": 0.08451137062077443
+  },
+  "test": {
+    "n": 3856,
+    "default_rate": 0.08843360995850623
+  },
+  "metrics": {
+    "Dummy (prior)": {
+      "threshold": 0.5,
+      "roc_auc_test": 0.5,
+      "roc_auc_train_cv": 0.4999,
+      "pr_auc_test": 0.0884,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Logistic regression": {
+      "threshold": 0.76,
+      "roc_auc_test": 0.805,
+      "roc_auc_train_cv": 0.8045,
+      "pr_auc_test": 0.3944,
+      "precision": 0.4107,
+      "recall": 0.3842,
+      "f1": 0.397
+    },
+    "Random forest": {
+      "threshold": 0.5,
+      "roc_auc_test": 0.7941,
+      "roc_auc_train_cv": 0.8008,
+      "pr_auc_test": 0.3684,
+      "precision": 0.2876,
+      "recall": 0.4985,
+      "f1": 0.3648
+    },
+    "Gradient boosting": {
+      "threshold": 0.71,
+      "roc_auc_test": 0.7866,
+      "roc_auc_train_cv": 0.7896,
+      "pr_auc_test": 0.3554,
+      "precision": 0.3582,
+      "recall": 0.3666,
+      "f1": 0.3623
+    }
+  },
+  "baseline_prevalence": 0.08843360995850623,
+  "confusion_matrices": {
+    "Dummy (prior)": [
+      [
+        3515,
+        0
+      ],
+      [
+        341,
+        0
+      ]
+    ],
+    "Logistic regression": [
+      [
+        3327,
+        188
+      ],
+      [
+        210,
+        131
+      ]
+    ],
+    "Random forest": [
+      [
+        3094,
+        421
+      ],
+      [
+        171,
+        170
+      ]
+    ],
+    "Gradient boosting": [
+      [
+        3291,
+        224
+      ],
+      [
+        216,
+        125
+      ]
+    ]
+  },
+  "best_model": "Logistic regression",
+  "decile_table": [
+    {
+      "decile": 0,
+      "mean_pred": 0.052,
+      "observed_default": 0.0104,
+      "n": 386
+    },
+    {
+      "decile": 1,
+      "mean_pred": 0.1041,
+      "observed_default": 0.013,
+      "n": 386
+    },
+    {
+      "decile": 2,
+      "mean_pred": 0.1524,
+      "observed_default": 0.0286,
+      "n": 385
+    },
+    {
+      "decile": 3,
+      "mean_pred": 0.2036,
+      "observed_default": 0.0311,
+      "n": 386
+    },
+    {
+      "decile": 4,
+      "mean_pred": 0.2614,
+      "observed_default": 0.0208,
+      "n": 385
+    },
+    {
+      "decile": 5,
+      "mean_pred": 0.3274,
+      "observed_default": 0.0777,
+      "n": 386
+    },
+    {
+      "decile": 6,
+      "mean_pred": 0.4062,
+      "observed_default": 0.0675,
+      "n": 385
+    },
+    {
+      "decile": 7,
+      "mean_pred": 0.5135,
+      "observed_default": 0.1218,
+      "n": 386
+    },
+    {
+      "decile": 8,
+      "mean_pred": 0.6452,
+      "observed_default": 0.1455,
+      "n": 385
+    },
+    {
+      "decile": 9,
+      "mean_pred": 0.8369,
+      "observed_default": 0.3679,
+      "n": 386
+    }
+  ],
+  "top20pct_capture": 0.5806451612903226,
+  "permutation_importance": {
+    "credit_score": {
+      "importance": 0.06609,
+      "sd": 0.00689
+    },
+    "foir": {
+      "importance": 0.05733,
+      "sd": 0.00504
+    },
+    "loan_to_income": {
+      "importance": 0.02227,
+      "sd": 0.00356
+    },
+    "credit_utilization_pct": {
+      "importance": 0.00886,
+      "sd": 0.00177
+    },
+    "acquisition_channel": {
+      "importance": 0.00429,
+      "sd": 0.00165
+    },
+    "previous_loans_count": {
+      "importance": 0.00427,
+      "sd": 0.00132
+    },
+    "city_tier": {
+      "importance": 0.00339,
+      "sd": 0.00137
+    },
+    "employment_type": {
+      "importance": 0.00326,
+      "sd": 0.00203
+    },
+    "monthly_income": {
+      "importance": 0.0022,
+      "sd": 0.00103
+    },
+    "tenure_months": {
+      "importance": 0.00165,
+      "sd": 0.00041
+    },
+    "emi_amount": {
+      "importance": 0.00081,
+      "sd": 0.00056
+    },
+    "interest_rate": {
+      "importance": 0.00069,
+      "sd": 0.0011
+    }
+  },
+  "leakage_demo": {
+    "leaky_auc": 1.0,
+    "honest_random_split_auc": 0.7972034605002627,
+    "honest_out_of_time_auc": 0.8050433208327945
+  }
+}

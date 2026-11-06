@@ -1,0 +1,40 @@
+table_name,rule_id,action,failures,description
+collections,K02b,REJECTED,1672,CASCADE: loan_id refers to a loans record that was itself rejected
+collections,K01,REJECTED,464,Duplicate collection_id (first occurrence kept)
+collections,K02,REJECTED,232,ORPHAN: loan_id does not exist in source loans
+collections,K03,REJECTED,232,amount_due missing/<=0 or amount_recovered missing/negative
+collections,K04,REJECTED,232,amount_recovered exceeds amount_due
+collections,K06,REJECTED,232,channel / outcome / collection_status not in allowed domain
+customer_financial_profiles,P03,FLAGGED,243,"monthly_income missing (kept as NULL, income_missing=TRUE)"
+customer_financial_profiles,P05a,FLAGGED,203,credit_score missing (kept as NULL)
+customer_financial_profiles,P01,REJECTED,61,Duplicate profile_id (first occurrence kept)
+customer_financial_profiles,P05,FIXED,41,credit_score outside 300-900 (set to NULL)
+customer_financial_profiles,P04,REJECTED,20,monthly_income non-numeric or <= 0
+customers,C06,FIXED,336,Employment type had inconsistent case/whitespace (standardised)
+customers,C05,FIXED,252,Employment type missing (set to 'Unknown')
+customers,C03,FLAGGED,168,Age missing (kept as NULL)
+customers,C01,REJECTED,84,Duplicate customer_id (first occurrence kept)
+customers,C04,FIXED,50,Age non-numeric or outside 18-75 (set to NULL)
+customers,C08,FIXED,34,signup_date is not a valid calendar date (set to NULL)
+loans,X02,FLAGGED,1454,Number of clean repayment rows differs from the number of installments due by the snapshot (usually a quarantined installment)
+loans,L01,REJECTED,61,Duplicate loan_id (first occurrence kept)
+loans,X01,FLAGGED,42,Reported current_dpd differs from DPD recomputed from clean repayments (may be explained by quarantined installments)
+loans,L04,REJECTED,30,"loan_amount / emi_amount missing, non-numeric or <= 0"
+loans,L09,REJECTED,30,"outstanding_balance missing, negative or greater than loan_amount"
+loans,L02,REJECTED,20,ORPHAN: customer_id does not exist in source customers
+loans,L03b,REJECTED,20,CASCADE: profile_id refers to a customer_financial_profiles record that was itself rejected
+loans,L05,REJECTED,20,interest_rate missing or outside 1-60 %
+loans,L07,REJECTED,20,A date column is missing or not a valid calendar date
+loans,L08,REJECTED,20,disbursement_date is after the snapshot date
+loans,L11,REJECTED,12,loan_status inconsistent with outstanding_balance / current_dpd
+loans,L06,REJECTED,10,"tenure_months missing, non-integer or outside 1-60"
+repayments,R02b,REJECTED,1724,CASCADE: loan_id refers to a loans record that was itself rejected
+repayments,R05,REJECTED,595,paid_amount > 0 but paid_date missing
+repayments,R01,REJECTED,472,Duplicate repayment_id (first occurrence kept)
+repayments,R06,REJECTED,459,repayment_status inconsistent with paid_amount / due_amount
+repayments,R08,REJECTED,442,due_date is on/before the loan's disbursement_date
+repayments,R11,REJECTED,340,dpd negative/missing or inconsistent with paid_date - due_date
+repayments,R02,REJECTED,236,ORPHAN: loan_id does not exist in source loans
+repayments,R03,REJECTED,236,due_amount missing/<=0 or paid_amount missing/negative
+repayments,R07,REJECTED,193,paid_date is before the loan's disbursement_date
+repayments,R10,REJECTED,130,paid_amount exceeds due_amount (overpayment)

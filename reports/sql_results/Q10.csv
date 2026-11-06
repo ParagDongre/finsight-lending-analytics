@@ -1,0 +1,51 @@
+customer_id,employment_type,missed_installments,loans_affected,worst_dpd,has_defaulted_loan
+C000407,Gig Worker,34,1,1008,True
+C000751,Business Owner,33,1,996,True
+C000847,Gig Worker,33,1,995,True
+C000615,Self-Employed,32,1,983,True
+C000092,Contract Worker,31,1,1000,True
+C001459,Salaried,31,1,942,True
+C001280,Salaried,30,1,967,True
+C001658,Contract Worker,30,1,919,True
+C001350,Business Owner,30,1,891,True
+C001294,Gig Worker,28,1,919,True
+C001701,Salaried,28,1,905,True
+C001238,Self-Employed,28,1,880,True
+C001010,Self-Employed,28,1,859,True
+C001035,Gig Worker,28,1,852,True
+C003005,Gig Worker,28,1,834,True
+C002939,Gig Worker,28,1,833,True
+C002085,Gig Worker,28,1,832,True
+C002558,Self-Employed,27,1,803,True
+C003256,Salaried,27,1,803,True
+C002306,Self-Employed,26,1,846,True
+C000750,Gig Worker,26,1,778,True
+C002196,Self-Employed,25,1,882,True
+C000963,Contract Worker,24,1,985,True
+C002042,Contract Worker,24,1,898,True
+C002944,Gig Worker,24,1,846,True
+C003299,Self-Employed,24,1,760,True
+C000051,Contract Worker,24,1,730,True
+C003958,Self-Employed,24,1,730,True
+C004482,Gig Worker,24,1,707,True
+C000802,Gig Worker,23,1,986,True
+C000949,Salaried,23,1,963,True
+C001302,Salaried,23,1,949,True
+C000826,Contract Worker,23,1,946,True
+C002011,Salaried,23,1,865,True
+C001889,Contract Worker,23,1,862,True
+C002005,Contract Worker,23,1,852,True
+C003082,Self-Employed,23,1,809,True
+C002670,Self-Employed,23,1,802,True
+C003669,Self-Employed,23,1,774,True
+C003746,Self-Employed,23,1,749,True
+C003548,Self-Employed,23,1,743,True
+C004094,Self-Employed,23,1,720,True
+C002662,Contract Worker,23,1,714,True
+C001906,Contract Worker,23,1,710,True
+C004514,Gig Worker,23,1,700,True
+C004192,Business Owner,23,1,699,True
+C004708,Salaried,23,1,697,True
+C004768,Self-Employed,23,1,694,True
+C003284,Salaried,23,1,688,True
+C004874,Gig Worker,23,1,683,True
