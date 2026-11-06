@@ -1,5 +1,5 @@
 # Data Quality Report
-_Generated 2026-11-05 07:27. All data is SYNTHETIC; defects were injected deliberately by `src/generation/dirty.py` so the pipeline has something to catch._
+_Generated 2026-11-06 20:49. All data is SYNTHETIC; defects were injected deliberately by `src/generation/dirty.py` so the pipeline has something to catch._
 
 ## 1. Record counts by table
 `balanced` confirms **raw rows = clean rows + rejected rows** (nothing silently dropped). `fixed`/`flagged` rows are kept in the clean table (value corrected or noted).
